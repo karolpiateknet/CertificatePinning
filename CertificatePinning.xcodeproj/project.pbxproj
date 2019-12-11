@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		5CFE62C7550582ECCD424EA8 /* libPods-CertificatePinning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D57C4877D525DF821DCEBF4 /* libPods-CertificatePinning.a */; };
 		C5FCA29C031073F2E5F311FD /* libPods-CertificatePinningTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1B549E5A4D62006A6A1DE6 /* libPods-CertificatePinningTests.a */; };
-		E72BE70D239147D500394800 /* netguru.der in Resources */ = {isa = PBXBuildFile; fileRef = E72BE70C239147D500394800 /* netguru.der */; };
-		E72BE70E239147D500394800 /* netguru.der in Resources */ = {isa = PBXBuildFile; fileRef = E72BE70C239147D500394800 /* netguru.der */; };
 		E7636AF1238E672B00C8A315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7636AF0238E672B00C8A315 /* AppDelegate.swift */; };
 		E7636AF5238E672B00C8A315 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7636AF4238E672B00C8A315 /* ViewController.swift */; };
 		E7636AF8238E672B00C8A315 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7636AF6238E672B00C8A315 /* Main.storyboard */; };
@@ -26,6 +24,7 @@
 		E7636B2B238EA6A700C8A315 /* NetguruRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7636B29238EA6A700C8A315 /* NetguruRequest.swift */; };
 		E7636B2D238EA6CE00C8A315 /* Certificates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7636B2C238EA6CE00C8A315 /* Certificates.swift */; };
 		E7636B2E238EA6CE00C8A315 /* Certificates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7636B2C238EA6CE00C8A315 /* Certificates.swift */; };
+		E778BA6523A12112000A132B /* www.netguru.com.cer in Resources */ = {isa = PBXBuildFile; fileRef = E778BA6423A12112000A132B /* www.netguru.com.cer */; };
 		E7DACCCE238FA67B0088247C /* TrustKitCertificatePinningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DACCCD238FA67B0088247C /* TrustKitCertificatePinningTests.swift */; };
 		E7DACCCF238FA8CB0088247C /* TrustKitCertificatePinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7636B14238E677900C8A315 /* TrustKitCertificatePinning.swift */; };
 /* End PBXBuildFile section */
@@ -47,7 +46,6 @@
 		AA204A6992F00A5C48646077 /* Pods-CertificatePinningTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CertificatePinningTests.release.xcconfig"; path = "Target Support Files/Pods-CertificatePinningTests/Pods-CertificatePinningTests.release.xcconfig"; sourceTree = "<group>"; };
 		C9BB3D3BDB1FA87A4E666224 /* Pods-CertificatePinning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CertificatePinning.debug.xcconfig"; path = "Target Support Files/Pods-CertificatePinning/Pods-CertificatePinning.debug.xcconfig"; sourceTree = "<group>"; };
 		E27B7E3BD1DAD26FF0726B0C /* Pods-CertificatePinningTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CertificatePinningTests.debug.xcconfig"; path = "Target Support Files/Pods-CertificatePinningTests/Pods-CertificatePinningTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E72BE70C239147D500394800 /* netguru.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = netguru.der; sourceTree = "<group>"; };
 		E7636AED238E672A00C8A315 /* CertificatePinning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CertificatePinning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7636AF0238E672B00C8A315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7636AF4238E672B00C8A315 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +61,7 @@
 		E7636B19238E689B00C8A315 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E7636B29238EA6A700C8A315 /* NetguruRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetguruRequest.swift; sourceTree = "<group>"; };
 		E7636B2C238EA6CE00C8A315 /* Certificates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Certificates.swift; sourceTree = "<group>"; };
+		E778BA6423A12112000A132B /* www.netguru.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = www.netguru.com.cer; sourceTree = "<group>"; };
 		E7DACCCD238FA67B0088247C /* TrustKitCertificatePinningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustKitCertificatePinningTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,7 +149,7 @@
 		E7636B20238EA1A500C8A315 /* Certificates */ = {
 			isa = PBXGroup;
 			children = (
-				E72BE70C239147D500394800 /* netguru.der */,
+				E778BA6423A12112000A132B /* www.netguru.com.cer */,
 				E7636B2C238EA6CE00C8A315 /* Certificates.swift */,
 			);
 			path = Certificates;
@@ -279,8 +278,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7636AFD238E672D00C8A315 /* LaunchScreen.storyboard in Resources */,
+				E778BA6523A12112000A132B /* www.netguru.com.cer in Resources */,
 				E7636AFA238E672D00C8A315 /* Assets.xcassets in Resources */,
-				E72BE70D239147D500394800 /* netguru.der in Resources */,
 				E7636AF8238E672B00C8A315 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +288,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72BE70E239147D500394800 /* netguru.der in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

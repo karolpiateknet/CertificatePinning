@@ -9,7 +9,7 @@ import Foundation
 struct Certificates {
     
     /// assign netguru.der file to this constant
-    static let netguru: SecCertificate = Certificates.certificate(filename: "netguru")
+    static let netguru: SecCertificate = Certificates.certificate(filename: "www.netguru.com")
   
     /// Read certifice from file
     ///
@@ -17,7 +17,7 @@ struct Certificates {
     /// - Returns: read certificate from file as SecCertificate, if file doesn't exists it will perform crash
     private static func certificate(filename: String) -> SecCertificate {
         
-        let filePath = Bundle.main.path(forResource: filename, ofType: "der")!
+        let filePath = Bundle.main.path(forResource: filename, ofType: "cer")!
         let data = try! Data(contentsOf: URL(fileURLWithPath: filePath))
         let certificate = SecCertificateCreateWithData(nil, data as CFData)!
         
