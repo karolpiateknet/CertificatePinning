@@ -19,16 +19,21 @@ final class TrustKitCertificatePinning: NSObject, URLSessionDelegate {
             "www.netguru.com": [
                 kTSKEnforcePinning: true,
                 kTSKIncludeSubdomains: true,
-                kTSKExpirationDate: "2020-10-09",
+                kTSKExpirationDate: "2021-06-30",
                 kTSKPublicKeyHashes: [
-                    "GesyhCSAz+OCxCt623nic/qqLXAPGUGGf5vwB5jBheU=",
-                    "+7YVLnrnzqo0VtEREXo0SbJlgdmQ9T9qy2INVVWNpcE=",
+                    "LlPZqzl9X3E7b4nQc6jexz0QNHr8zJop04/g7P0mT+8=",
+                    "+7YVLnrnzqo0VtEREXo0ZbJlgdmQ9T9qy2INVVWNpcE==",
                 ],
             ],
             "www.google.com": [
                 kTSKEnforcePinning: true,
                 kTSKIncludeSubdomains: true,
-                kTSKExpirationDate: "2020-10-09",
+                kTSKExpirationDate: "2021-06-30",
+                kTSKPublicKeyHashes: [
+                    "umr54R2xp68Q4r0ehzkeE4aoBXoTul4p/X3BNFUS024=",
+                    "+7YVLnrnzqo0VtEREXo0ZbJlgdmQ9T9qy2INVVWNpcE==",
+                ],
+            ],
                 kTSKPublicKeyHashes: [
                     "+7YVLnrnzqo0VtEREXo0ZbJlgdmQ9T9qy2INVVWNpcE==",
                     "+8YVLnrnzqo0VtEREXo0SbJlgdmQ9T9qy2INVVWNpcE=",
