@@ -4,7 +4,7 @@
 target 'CertificatePinning' do
 
   pod 'TrustKit', '1.6.3'
-  pod 'Alamofire', '5.0.0-beta.3'
+  pod 'Alamofire', '5.3.0'
 
   target 'CertificatePinningTests' do
     inherit! :search_paths
