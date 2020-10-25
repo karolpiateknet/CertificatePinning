@@ -34,9 +34,14 @@ final class TrustKitCertificatePinning: NSObject, URLSessionDelegate {
                     "+7YVLnrnzqo0VtEREXo0ZbJlgdmQ9T9qy2INVVWNpcE==",
                 ],
             ],
+            "github.com": [
+                kTSKEnforcePinning: true,
+                kTSKIncludeSubdomains: true,
+                kTSKExpirationDate: "1995-01-01",
                 kTSKPublicKeyHashes: [
+                    // Wrong Certificates for past expiration date tests.
+                    "LlPZqzl9X3E7b4nQc6jexz0QNHr8zJop04/g7P0mT+8=",
                     "+7YVLnrnzqo0VtEREXo0ZbJlgdmQ9T9qy2INVVWNpcE==",
-                    "+8YVLnrnzqo0VtEREXo0SbJlgdmQ9T9qy2INVVWNpcE=",
                 ],
             ]
         ]

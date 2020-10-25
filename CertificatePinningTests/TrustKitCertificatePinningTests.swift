@@ -58,6 +58,22 @@ class TrustKitCertificatePinningTests: XCTestCase {
         
         wait(for: [expectation], timeout: 1.0)
     }
+
+    /// This test is checking if website with wrong certificate and certificate expiration date in the past defined in TrustKit configuration will succed
+    /// Expected behaviour: connection should succed since TrustKit configuration contains certificate expiration date in the past for this website
+    /// Defined Certificate in TrustKit configuration is outdated, but expiration date is past date.
+    func testIfWebsiteWithExpiredWrongCertificatesWorking() {
+
+        let expectation = XCTestExpectation(description: "Network communication with Github will succeed.")
+
+        getGithub { success in
+            if success {
+                expectation.fulfill()
+            }
+        }
+
+        wait(for: [expectation], timeout: 1.0)
+    }
     
     private func getNetguru(completionHandler: @escaping (Bool) -> Void) {
         getRequest(url: "https://www.netguru.com", completionHandler: completionHandler)
@@ -68,7 +84,11 @@ class TrustKitCertificatePinningTests: XCTestCase {
     }
     
     private func getStackOverflow(completionHandler: @escaping (Bool) -> Void) {
-        getRequest(url: "www.https://stackoverflow.com", completionHandler: completionHandler)
+        getRequest(url: "https://stackoverflow.com", completionHandler: completionHandler)
+    }
+
+    private func getGithub(completionHandler: @escaping (Bool) -> Void) {
+        getRequest(url: "https://github.com", completionHandler: completionHandler)
     }
     
     private func getRequest(url: String, completionHandler: @escaping (Bool) -> Void) {
