@@ -32,7 +32,7 @@ class TrustKitCertificatePinningTests: XCTestCase {
     /// Communitation between website should work
     func testIfWebsiteWithNotValidCertificateNotWorking() {
         
-        let expectation = XCTestExpectation(description: "Network communication with Google will succeed.")
+        let expectation = XCTestExpectation(description: "Network communication with StackOverflow will succeed.")
         
         getStackOverflow { success in
             if success {
