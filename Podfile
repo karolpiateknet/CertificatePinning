@@ -3,7 +3,7 @@
 
 target 'CertificatePinning' do
 
-  pod 'TrustKit'
+  pod 'TrustKit', '1.6.3'
   pod 'Alamofire', '5.0.0-beta.3'
 
   target 'CertificatePinningTests' do
