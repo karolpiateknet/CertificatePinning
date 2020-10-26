@@ -30,6 +30,7 @@ final class TrustKitCertificatePinning: NSObject, URLSessionDelegate {
                 kTSKIncludeSubdomains: true,
                 kTSKExpirationDate: "2021-06-30",
                 kTSKPublicKeyHashes: [
+                    /// Wrong Certificates with future expiration date.
                     "umr54R2xp68Q4r0ehzkeE4aoBXoTul4p/X3BNFUS024=",
                     "+7YVLnrnzqo0VtEREXo0ZbJlgdmQ9T9qy2INVVWNpcE==",
                 ],

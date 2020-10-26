@@ -26,11 +26,11 @@ class TrustKitCertificatePinningTests: XCTestCase {
         wait(for: [expectation], timeout: 1.0)
     }
     
-    /// This test is checking if website without certificate defined in TrustKit configuration will succed
+    /// This test is checking if website without certificates defined in TrustKit configuration will succed
     /// Expected behaviour: connection should be established since TrustKit only checks defined websites
     /// There is no defined certificate for this website
     /// Communitation between website should work
-    func testIfWebsiteWithNotValidCertificateNotWorking() {
+    func testIfWebsiteWithoutPredefinedCertificateWorking() {
         
         let expectation = XCTestExpectation(description: "Network communication with StackOverflow will succeed.")
         
@@ -43,10 +43,10 @@ class TrustKitCertificatePinningTests: XCTestCase {
         wait(for: [expectation], timeout: 1.0)
     }
     
-    /// This test is checking if website with  outdated certificate defined in TrustKit configuration will succed
+    /// This test is checking if website with outdated certificate defined in TrustKit configuration will succed
     /// Expected behaviour: connection should fail since TrustKit configuration contains outdated certificate for this website
     /// Defined Certificate in TrustKit configuration is not valid. (Outdate or hacked)
-    func testIfWebsiteWithoutPredefinedCertificateWorking() {
+    func testIfWebsiteWithOutdatedCertificateWorking() {
         
         let expectation = XCTestExpectation(description: "Network communication with Google will succeed.")
         
