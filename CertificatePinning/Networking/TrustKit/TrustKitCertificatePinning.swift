@@ -6,6 +6,10 @@
 import TrustKit
 
 final class TrustKitCertificatePinning: NSObject, URLSessionDelegate {
+
+    /// Disable errors reporting to default domain.
+    /// By default TrustKit has enabled reporting errors to https://overmind.datatheorem.com/trustkit/report.
+    private static let disableDefaultReportUri = true
     
     /// URLSession with configured certificate pinning
     lazy var session: URLSession = {
@@ -17,6 +21,7 @@ final class TrustKitCertificatePinning: NSObject, URLSessionDelegate {
     private let trustKitConfig = [
         kTSKPinnedDomains: [
             "www.netguru.com": [
+                kTSKDisableDefaultReportUri: TrustKitCertificatePinning.disableDefaultReportUri,
                 kTSKEnforcePinning: true,
                 kTSKIncludeSubdomains: true,
                 kTSKExpirationDate: "2021-06-30",
@@ -26,6 +31,7 @@ final class TrustKitCertificatePinning: NSObject, URLSessionDelegate {
                 ],
             ],
             "www.google.com": [
+                kTSKDisableDefaultReportUri: TrustKitCertificatePinning.disableDefaultReportUri,
                 kTSKEnforcePinning: true,
                 kTSKIncludeSubdomains: true,
                 kTSKExpirationDate: "2021-06-30",
@@ -36,6 +42,7 @@ final class TrustKitCertificatePinning: NSObject, URLSessionDelegate {
                 ],
             ],
             "github.com": [
+                kTSKDisableDefaultReportUri: TrustKitCertificatePinning.disableDefaultReportUri,
                 kTSKEnforcePinning: true,
                 kTSKIncludeSubdomains: true,
                 kTSKExpirationDate: "1995-01-01",
